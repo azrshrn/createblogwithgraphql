@@ -58,6 +58,7 @@ export default function BlogPost({ post }) {
     <main className={styles.blog}>
 
       <section className={styles.hero}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={post.coverPhoto.url} alt={post.title} />
         <div className={styles.blogtitle}>
           <h2>{post.title}</h2>
@@ -71,6 +72,7 @@ export default function BlogPost({ post }) {
       ></div>
       <footer className={styles.footer}>
         <div className={styles.div_footer}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={post.createdBy.picture} alt={post.createdBy.name} />
           <span>{post.createdBy.name}</span>
         </div>
